@@ -59,6 +59,6 @@ def main():
         else: #Se a letra não estiver presente na frase, o número de vidas é atualizado
             vidas -= 1
             print("Letra não presente!\n")
-    
+            letras_tentadas += letra
 if __name__ == "__main__":
     main()
