@@ -51,7 +51,7 @@ def main():
         letra = input("Digite uma letra: ")
         if letra in letras_tentadas: #Verifica se o jogador já tentou a letra digitada
             print("Letra já tentada!\n")
-        if letra in frase: #Se a letra estiver presente na frase, frase_mascarada é atualizada
+        elif letra in frase: #Se a letra estiver presente na frase, frase_mascarada é atualizada
             for i, l in enumerate(frase):
                 if l == letra:
                     frase_mascarada[i] = letra
